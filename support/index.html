@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ferhat Taşlı - App Support URL Setup</title>
+    <title>App Support - Help Center</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -43,19 +43,20 @@
             padding-top: 20px;
             border-top: 2px solid #eee;
         }
-        .step {
+        .faq-item {
             background: #f8f9fa;
             padding: 20px;
             border-radius: 8px;
             margin: 15px 0;
         }
-        .step h3 {
+        .faq-item h3 {
             margin-top: 0;
+            color: #2c3e50;
         }
-        .note {
-            background: #e8f4f8;
+        .troubleshoot {
+            background: #fff3e0;
             padding: 15px;
-            border-left: 4px solid #2c3e50;
+            border-left: 4px solid #ff9800;
             margin: 15px 0;
         }
         .contact-box {
@@ -64,57 +65,110 @@
             border-radius: 8px;
             margin-top: 30px;
         }
-        code {
-            background: #f1f1f1;
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-family: monospace;
+        .app-version {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 10px;
+        }
+        .feature-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .feature-item {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="language-section" id="english">
-            <h1>App Support URL Configuration</h1>
-            <p>Last updated: 04/01/2025</p>
+            <h1>App Support Center</h1>
+            <p class="app-version">Current Version: 1.0.0</p>
 
             <div class="section">
-                <h2>Support URL Setup</h2>
-                <p>This page serves as the official support URL for your iOS app in App Store Connect. You can reference this URL in your App Store listing using:</p>
-                <code>https://ferhatsli.github.io/support</code>
+                <h2>Features & How to Use</h2>
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <h3>Prayer Times</h3>
+                        <ul>
+                            <li>Accurate prayer times based on your location</li>
+                            <li>Multiple calculation methods</li>
+                            <li>Customizable notifications</li>
+                        </ul>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Qibla Direction</h3>
+                        <ul>
+                            <li>Precise Qibla finder using device compass</li>
+                            <li>Works offline after initial setup</li>
+                        </ul>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Mosque Finder</h3>
+                        <ul>
+                            <li>Find nearby mosques</li>
+                            <li>Get directions and prayer times</li>
+                            <li>Save favorite mosques</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
 
             <div class="section">
-                <h2>How to Use This Support URL</h2>
-                <div class="step">
-                    <h3>1. In App Store Connect</h3>
+                <h2>Frequently Asked Questions</h2>
+                
+                <div class="faq-item">
+                    <h3>Why does the app need location access?</h3>
+                    <p>Location access is required to:</p>
                     <ul>
-                        <li>Log in to <a href="https://appstoreconnect.apple.com" target="_blank">App Store Connect</a></li>
-                        <li>Select your app</li>
-                        <li>Go to "App Information"</li>
-                        <li>In the "Support" section, enter: <code>https://ferhatsli.github.io/support</code></li>
-                        <li>Save your changes</li>
+                        <li>Calculate accurate prayer times for your specific location</li>
+                        <li>Find nearby mosques</li>
+                        <li>Provide precise Qibla direction</li>
                     </ul>
                 </div>
 
-                <div class="step">
-                    <h3>2. In Your App</h3>
-                    <ul>
-                        <li>Add a support button or menu item in your app's settings</li>
-                        <li>When users tap the support option, open this URL in their default browser</li>
-                        <li>Example Swift code:
-                            <pre><code>if let url = URL(string: "https://ferhatsli.github.io/support"),
-   UIApplication.shared.canOpenURL(url) {
-    UIApplication.shared.open(url)
-}</code></pre>
-                        </li>
-                    </ul>
+                <div class="faq-item">
+                    <h3>How accurate are the prayer times?</h3>
+                    <p>Prayer times are calculated using precise astronomical formulas and your exact location. You can choose from multiple calculation methods in the settings to match your local convention.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Do I need an internet connection?</h3>
+                    <p>Basic features like prayer times and Qibla direction work offline after initial setup. Internet connection is required for mosque finder and updates.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Troubleshooting</h2>
+                
+                <div class="troubleshoot">
+                    <h3>Location Issues</h3>
+                    <p>If location services aren't working:</p>
+                    <ol>
+                        <li>Check if location services are enabled in device settings</li>
+                        <li>Ensure the app has location permission</li>
+                        <li>Try restarting the app</li>
+                    </ol>
+                </div>
+
+                <div class="troubleshoot">
+                    <h3>Notification Problems</h3>
+                    <p>If you're not receiving prayer time notifications:</p>
+                    <ol>
+                        <li>Check notification permissions in device settings</li>
+                        <li>Verify notification settings in the app</li>
+                        <li>Ensure Do Not Disturb is disabled</li>
+                    </ol>
                 </div>
             </div>
 
             <div class="contact-box">
-                <h2>Direct Support</h2>
-                <p>For immediate assistance or technical issues, please contact:</p>
+                <h2>Need More Help?</h2>
+                <p>Contact our support team:</p>
                 <ul>
                     <li>Email: ferhatsli63@gmail.com</li>
                     <li>Response Time: Within 24-48 hours</li>
@@ -123,46 +177,89 @@
         </div>
 
         <div class="language-section" id="turkish">
-            <h1>Uygulama Destek URL Yapılandırması</h1>
-            <p>Son güncelleme: 04/01/2025</p>
+            <h1>Uygulama Destek Merkezi</h1>
+            <p class="app-version">Mevcut Sürüm: 1.0.0</p>
 
             <div class="section">
-                <h2>Destek URL'i Kurulumu</h2>
-                <p>Bu sayfa, App Store Connect'teki iOS uygulamanız için resmi destek URL'i olarak hizmet vermektedir. App Store listenizde bu URL'i şu şekilde referans gösterebilirsiniz:</p>
-                <code>https://ferhatsli.github.io/support</code>
+                <h2>Özellikler & Kullanım</h2>
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <h3>Namaz Vakitleri</h3>
+                        <ul>
+                            <li>Konumunuza göre doğru namaz vakitleri</li>
+                            <li>Çoklu hesaplama yöntemleri</li>
+                            <li>Özelleştirilebilir bildirimler</li>
+                        </ul>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Kıble Yönü</h3>
+                        <ul>
+                            <li>Cihaz pusulası ile hassas kıble bulucu</li>
+                            <li>İlk kurulumdan sonra çevrimdışı çalışır</li>
+                        </ul>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Cami Bulucu</h3>
+                        <ul>
+                            <li>Yakındaki camileri bulun</li>
+                            <li>Yol tarifi ve namaz vakitlerini alın</li>
+                            <li>Favori camileri kaydedin</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
 
             <div class="section">
-                <h2>Bu Destek URL'ini Nasıl Kullanabilirsiniz</h2>
-                <div class="step">
-                    <h3>1. App Store Connect'te</h3>
+                <h2>Sık Sorulan Sorular</h2>
+                
+                <div class="faq-item">
+                    <h3>Uygulama neden konum erişimi istiyor?</h3>
+                    <p>Konum erişimi şunlar için gereklidir:</p>
                     <ul>
-                        <li><a href="https://appstoreconnect.apple.com" target="_blank">App Store Connect</a>'e giriş yapın</li>
-                        <li>Uygulamanızı seçin</li>
-                        <li>"Uygulama Bilgileri"ne gidin</li>
-                        <li>"Destek" bölümüne şunu girin: <code>https://ferhatsli.github.io/support</code></li>
-                        <li>Değişiklikleri kaydedin</li>
+                        <li>Konumunuza özel doğru namaz vakitlerini hesaplamak</li>
+                        <li>Yakındaki camileri bulmak</li>
+                        <li>Hassas kıble yönü sağlamak</li>
                     </ul>
                 </div>
 
-                <div class="step">
-                    <h3>2. Uygulamanızda</h3>
-                    <ul>
-                        <li>Uygulamanızın ayarlarına bir destek butonu veya menü öğesi ekleyin</li>
-                        <li>Kullanıcılar destek seçeneğine dokunduğunda, bu URL'i varsayılan tarayıcılarında açın</li>
-                        <li>Örnek Swift kodu:
-                            <pre><code>if let url = URL(string: "https://ferhatsli.github.io/support"),
-   UIApplication.shared.canOpenURL(url) {
-    UIApplication.shared.open(url)
-}</code></pre>
-                        </li>
-                    </ul>
+                <div class="faq-item">
+                    <h3>Namaz vakitleri ne kadar doğru?</h3>
+                    <p>Namaz vakitleri, hassas astronomik formüller ve tam konumunuz kullanılarak hesaplanır. Yerel uygulamanıza uyması için ayarlardan birden fazla hesaplama yöntemi seçebilirsiniz.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>İnternet bağlantısına ihtiyacım var mı?</h3>
+                    <p>Namaz vakitleri ve kıble yönü gibi temel özellikler ilk kurulumdan sonra çevrimdışı çalışır. Cami bulucu ve güncellemeler için internet bağlantısı gereklidir.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Sorun Giderme</h2>
+                
+                <div class="troubleshoot">
+                    <h3>Konum Sorunları</h3>
+                    <p>Konum hizmetleri çalışmıyorsa:</p>
+                    <ol>
+                        <li>Cihaz ayarlarında konum hizmetlerinin açık olduğunu kontrol edin</li>
+                        <li>Uygulamanın konum iznine sahip olduğundan emin olun</li>
+                        <li>Uygulamayı yeniden başlatmayı deneyin</li>
+                    </ol>
+                </div>
+
+                <div class="troubleshoot">
+                    <h3>Bildirim Sorunları</h3>
+                    <p>Namaz vakti bildirimleri almıyorsanız:</p>
+                    <ol>
+                        <li>Cihaz ayarlarında bildirim izinlerini kontrol edin</li>
+                        <li>Uygulama içi bildirim ayarlarını doğrulayın</li>
+                        <li>Rahatsız Etmeyin modunun kapalı olduğundan emin olun</li>
+                    </ol>
                 </div>
             </div>
 
             <div class="contact-box">
-                <h2>Doğrudan Destek</h2>
-                <p>Acil yardım veya teknik sorunlar için lütfen iletişime geçin:</p>
+                <h2>Daha Fazla Yardıma mı İhtiyacınız Var?</h2>
+                <p>Destek ekibimizle iletişime geçin:</p>
                 <ul>
                     <li>E-posta: ferhatsli63@gmail.com</li>
                     <li>Yanıt Süresi: 24-48 saat içinde</li>
