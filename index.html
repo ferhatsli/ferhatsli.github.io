@@ -15,11 +15,10 @@
                 <i class="fas fa-bars"></i>
             </button>
             <div class="nav-links">
-                <a href="#about" class="nav-link" data-tr="about">Hakkımda</a>
                 <a href="#skills" class="nav-link" data-tr="skills">Yetenekler</a>
                 <a href="#experience" class="nav-link" data-tr="experience">Deneyim</a>
                 <a href="#projects" class="nav-link" data-tr="projects">Projeler</a>
-                <a href="/support" class="nav-link" data-tr="support">Destek</a>
+                <a href="#contact" class="nav-link" data-tr="contact">İletişim</a>
             </div>
             <div class="nav-controls">
                 <button id="langToggle">EN</button>
@@ -30,45 +29,87 @@
 
     <header class="hero">
         <div class="container">
-            <h1>Ferhat Taşlı</h1>
-            <h2 class="typewriter" data-tr="role">Wordpress Developer & iOS Developer</h2>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/ferhat-ta%C5%9Fl%C4%B1-674953218/" target="_blank" class="social-link">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/ferhatsli" target="_blank" class="social-link">
-                    <i class="fab fa-github"></i>
-                </a>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Ferhat Taşlı</h1>
+                    <h2 class="typewriter" data-tr="role">Yazılım Mühendisi</h2>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/ferhat-ta%C5%9Fl%C4%B1-674953218/" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/ferhatsli" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="cv-foto.jpeg" alt="Ferhat Taşlı" class="profile-photo">
+                </div>
             </div>
         </div>
     </header>
 
-    <section id="about">
-        <div class="container">
-            <h2 data-tr="about-title">Hakkımda</h2>
-            <p data-tr="about-desc">İstinye Üniversitesi'nde Yazılım Mühendisliği son sınıf öğrencisiyim. Wordpress ve iOS geliştirme konularında uzmanlaşmış bir yazılım geliştiriciyim.</p>
-        </div>
-    </section>
-
     <section id="skills">
         <div class="container">
-            <h2 data-tr="skills-title">Yetenekler</h2>
+            <h2 data-tr="skills-title">Technical Skills</h2>
             <div class="skills-grid">
-                <div class="skill-card">
-                    <i class="fab fa-wordpress"></i>
-                    <h3>WordPress</h3>
+                <div class="skill-category">
+                    <h3 data-tr="frontend-title">Frontend Development</h3>
+                    <div class="skill-items">
+                        <span class="tech-tag">React.js</span>
+                        <span class="tech-tag">Next.js</span>
+                        <span class="tech-tag">React Native</span>
+                        <span class="tech-tag">SwiftUI</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                    </div>
                 </div>
-                <div class="skill-card">
-                    <i class="fab fa-swift"></i>
-                    <h3>Swift</h3>
+
+                <div class="skill-category">
+                    <h3 data-tr="backend-title">Backend Basics</h3>
+                    <div class="skill-items">
+                        <span class="tech-tag">Laravel</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Supabase</span>
+                        <span class="tech-tag">RESTful API Integration</span>
+                    </div>
                 </div>
-                <div class="skill-card">
-                    <i class="fas fa-database"></i>
-                    <h3>SQL</h3>
+
+                <div class="skill-category">
+                    <h3 data-tr="ai-title">AI Integration</h3>
+                    <div class="skill-items">
+                        <span class="tech-tag">AI-powered application development</span>
+                        <span class="tech-tag">Transcript analysis</span>
+                        <span class="tech-tag">LLM-based systems</span>
+                    </div>
                 </div>
-                <div class="skill-card">
-                    <i class="fab fa-react"></i>
-                    <h3>React Native</h3>
+
+                <div class="skill-category">
+                    <h3 data-tr="tools-title">Tools & Platforms</h3>
+                    <div class="skill-items">
+                        <span class="tech-tag">Vercel</span>
+                        <span class="tech-tag">Netlify</span>
+                        <span class="tech-tag">RevenueCat</span>
+                        <span class="tech-tag">OneSignal</span>
+                        <span class="tech-tag">Git</span>
+                        <span class="tech-tag">GitHub</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 data-tr="languages-title">Languages</h3>
+                    <div class="skill-items">
+                        <div class="language-item">
+                            <span class="language-name">Turkish</span>
+                            <span class="language-level">Native</span>
+                        </div>
+                        <div class="language-item">
+                            <span class="language-name">English</span>
+                            <span class="language-level">B2 Level</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -80,33 +121,89 @@
             <div class="experience-grid">
                 <div class="experience-card">
                     <div class="experience-card-header">
-                        <h3>Netvar Elektronik</h3>
-                        <span class="company-logo">NE</span>
+                        <h3 data-tr="flalingo-title">Software Engineer Intern</h3>
+                        <span class="company-logo">FL</span>
                     </div>
                     <div class="experience-card-body">
-                        <p class="experience-role">Mobile Developer Intern</p>
-                        <p class="experience-date"><i class="far fa-calendar-alt"></i> 23-08-2024/02-10-2024</p>
+                        <p class="experience-role" data-tr="flalingo-company">Flalingo</p>
+                        <p class="experience-date"><i class="far fa-calendar-alt"></i> <span data-tr="flalingo-date">02/2025 - 04/2025 | Remote</span></p>
+                        <ul data-tr="flalingo-desc">
+                            <li>AI-powered egzersiz platformu için React, Laravel ve Python kullanarak özellikler geliştirdim</li>
+                            <li>Kullanıcı etkileşimini artıran otomatik egzersiz üretimi için transkript analizi uyguladım</li>
+                            <li>MVP'den platform entegrasyonuna kadar tam döngü ürün geliştirmeye katkıda bulundum</li>
+                        </ul>
                         <div class="experience-tags">
-                            <span class="tech-tag">iOS</span>
-                            <span class="tech-tag">Swift</span>
-                            <span class="tech-tag">Mobile</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">AI</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="experience-card">
                     <div class="experience-card-header">
-                        <h3>Dede Group</h3>
+                        <h3 data-tr="netvar-title">Mobile Developer Intern</h3>
+                        <span class="company-logo">NE</span>
+                    </div>
+                    <div class="experience-card-body">
+                        <p class="experience-role" data-tr="netvar-company">Netvar Elektronik</p>
+                        <p class="experience-date"><i class="far fa-calendar-alt"></i> <span data-tr="netvar-date">08/2024 - 10/2024 | İstanbul</span></p>
+                        <ul data-tr="netvar-desc">
+                            <li>React Native ve TypeScript kullanarak cross-platform film keşif uygulaması geliştirdim</li>
+                            <li>Kimlik doğrulama ve veri yönetimi için Supabase entegrasyonunu gerçekleştirdim</li>
+                            <li>Sonsuz kaydırma, karanlık mod ve kesintisiz navigasyon özellikleri tasarladım</li>
+                        </ul>
+                        <div class="experience-tags">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Supabase</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-card-header">
+                        <h3 data-tr="freelance-title">Software Developer</h3>
+                        <span class="company-logo">FR</span>
+                    </div>
+                    <div class="experience-card-body">
+                        <p class="experience-role" data-tr="freelance-company">Freelance</p>
+                        <p class="experience-date"><i class="far fa-calendar-alt"></i> <span data-tr="freelance-date">2021 - 2024 | Remote</span></p>
+                        <ul data-tr="freelance-desc">
+                            <li>React Native, Swift, React.js, TypeScript ve WordPress kullanarak web ve mobil uygulamalar geliştirdim</li>
+                            <li>Müşteri ihtiyaçlarını fonksiyonel ve kullanıcı dostu çözümlere dönüştürdüm</li>
+                            <li>Kişilerarası iletişim ve müzakere becerilerini geliştirerek tüm müşteri iletişimini yönettim</li>
+                            <li>Sıkı teslim tarihleri altında inisiyatif alarak problem çözme ve zaman yönetimi becerilerimi güçlendirdim</li>
+                        </ul>
+                        <div class="experience-tags">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Swift</span>
+                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">WordPress</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-card-header">
+                        <h3 data-tr="dede-title">Web Developer</h3>
                         <span class="company-logo">DG</span>
                     </div>
                     <div class="experience-card-body">
-                        <p class="experience-role">WordPress Developer & iOS Developer</p>
-                        <p class="experience-date"><i class="far fa-calendar-alt"></i> 14-09-2022/20-04-2024</p>
+                        <p class="experience-role" data-tr="dede-company">Dede Group</p>
+                        <p class="experience-date"><i class="far fa-calendar-alt"></i> <span data-tr="dede-date">09/2022 - 04/2024 | İstanbul</span></p>
+                        <ul data-tr="dede-desc">
+                            <li>WordPress, HTML5 ve CSS3 kullanarak kurumsal web siteleri geliştirdim ve bakımını yaptım</li>
+                            <li>Güvenilir performans için hosting ve domain operasyonlarını yönettim</li>
+                            <li>WordPress temalarını özelleştirdim ve mobil SEO performansını iyileştirdim</li>
+                        </ul>
                         <div class="experience-tags">
                             <span class="tech-tag">WordPress</span>
-                            <span class="tech-tag">PHP</span>
-                            <span class="tech-tag">iOS</span>
-                            <span class="tech-tag">Swift</span>
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">SEO</span>
                         </div>
                     </div>
                 </div>
@@ -119,114 +216,78 @@
             <h2 data-tr="projects-title">Projeler</h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <h3>Cryptocurrency Price Tracker</h3>
-                    <p>Swift ile geliştirilmiş kripto para takip uygulaması</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Swift</span>
-                        <span class="tech-tag">iOS</span>
+                    <h3 data-tr="aieg-title">AI-Powered Exercise Generator Platform</h3>
+                    <div class="project-description">
+                        <ul data-tr="aieg-desc">
+                            <li>Flalingo Internal Project kapsamında geliştirilen yapay zeka destekli egzersiz oluşturma platformu</li>
+                            <li>React, Laravel ve Python teknolojileri kullanıldı</li>
+                            <li>Transkript analizi ve otomatik egzersiz oluşturma özellikleri geliştirildi</li>
+                            <li>Flalingo'nun ana platformuna başarıyla entegre edildi</li>
+                        </ul>
                     </div>
-                    <div class="project-links">
-                        <a href="https://github.com/ferhatsli/CryptocurrencyPriceTracker" target="_blank" class="project-link">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Laravel</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">AI</span>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <h3>Fenerbahçe Player App</h3>
-                    <p>Swift ile geliştirilmiş Fenerbahçe futbolcu bilgi uygulaması</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Swift</span>
-                        <span class="tech-tag">iOS</span>
+                    <h3 data-tr="aiscribe-title">AiScribe - AI Agent-Supported Prompt Creation</h3>
+                    <div class="project-description">
+                        <ul data-tr="aiscribe-desc">
+                            <li>Python (FastAPI) backend ve Swift (SwiftUI) iOS uygulaması olarak geliştirildi</li>
+                            <li>AutoGen framework kullanılarak gelişmiş prompt analizi yapan akıllı çoklu-ajan sistemi oluşturuldu</li>
+                            <li>MVVM mimarisi ile iOS uygulaması geliştirildi</li>
+                            <li>Karanlık mod desteği ve gerçek zamanlı içerik senkronizasyonu özellikleri eklendi</li>
+                            <li>Dinamik içerik üretimi ve otomatik prompt genişletme için çoklu AI modelleri entegre edildi</li>
+                        </ul>
                     </div>
-                    <div class="project-links">
-                        <a href="https://github.com/ferhatsli/FenerbahcePlayerApp" target="_blank" class="project-link">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <h3>Egg Timer</h3>
-                    <p>Swift ile geliştirilmiş yumurta pişirme zamanlayıcı uygulaması</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Swift</span>
-                        <span class="tech-tag">iOS</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/ferhatsli/Egg-Timer" target="_blank" class="project-link">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <h3>My ToDo App</h3>
-                    <p>Swift ile geliştirilmiş yapılacaklar listesi uygulaması</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Swift</span>
-                        <span class="tech-tag">iOS</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/ferhatsli/MyToDoApp" target="_blank" class="project-link">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <h3>My Weather</h3>
-                    <p>Swift ile geliştirilmiş hava durumu uygulaması</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Swift</span>
-                        <span class="tech-tag">iOS</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/ferhatsli/MyWeather" target="_blank" class="project-link">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <h3>ML Maaş Tahmini</h3>
-                    <p>Python ile geliştirilmiş makine öğrenmesi maaş tahmin projesi</p>
                     <div class="project-tech">
                         <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Machine Learning</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/ferhatsli/ML_Maas_Tahmini" target="_blank" class="project-link">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <h3>LLM Hastalıklı Patates & Sahte Haber</h3>
-                    <p>LLM dil modelleri kullanarak hastalıklı patates tespiti ve sahte haber üretimi projesi</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">LLM</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/ferhatsli/LLM-HastalikliPatates-SahteHaber" target="_blank" class="project-link">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">Swift</span>
+                        <span class="tech-tag">SwiftUI</span>
+                        <span class="tech-tag">AutoGen</span>
+                        <span class="tech-tag">AI</span>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <h3>Ecole 42 Piscine</h3>
-                    <p>Ecole 42 okulunda yapılan projelerin kodları</p>
+                    <h3 data-tr="alif-title">Alif iOS App</h3>
+                    <div class="project-description">
+                        <ul data-tr="alif-desc">
+                            <li>SwiftUI ile geliştirilen İslami Asistan uygulaması</li>
+                            <li>Namaz vakitleri, kıble yönü ve yapay zeka sohbet botu özellikleri</li>
+                            <li>RevenueCat ile abonelik sistemi entegrasyonu</li>
+                            <li>OneSignal ile push bildirim sistemi entegrasyonu</li>
+                            <li>App Store'da başarıyla yayınlandı</li>
+                        </ul>
+                    </div>
                     <div class="project-tech">
-                        <span class="tech-tag">C</span>
+                        <span class="tech-tag">Swift</span>
+                        <span class="tech-tag">SwiftUI</span>
+                        <span class="tech-tag">RevenueCat</span>
+                        <span class="tech-tag">OneSignal</span>
+                        <span class="tech-tag">AI</span>
                     </div>
-                    <div class="project-links">
-                        <a href="https://github.com/ferhatsli/Ecole_42_Piscine" target="_blank" class="project-link">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 data-tr="contact-title">İletişim</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <p><span data-tr="phone-label">Telefon</span>: <a href="tel:+905054267909">+90 (505) 426 79 09</a></p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p><span data-tr="email-label">E-mail</span>: <a href="mailto:ferhatsli63@gmail.com">ferhatsli63@gmail.com</a></p>
                 </div>
             </div>
         </div>
