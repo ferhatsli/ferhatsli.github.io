@@ -12,7 +12,7 @@ const translations = {
         'phone-label': 'Phone',
         'email-label': 'Email',
         'projects-coming-soon': 'Coming soon...',
-        role: 'Software Engineer',
+        role: 'iOS Developer',
         
         // Experience Section
         'flalingo-title': 'Software Engineer Intern',
@@ -64,7 +64,7 @@ const translations = {
         'phone-label': 'Telefon',
         'email-label': 'E-mail',
         'project-desc': 'Modern ve duyarlı kişisel website',
-        role: 'Yazılım Mühendisi',
+        role: 'iOS Developer',
         
         // Experience Section
         'flalingo-title': 'Yazılım Mühendisi Stajyeri',
